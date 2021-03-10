@@ -1,0 +1,81 @@
+/*모든 요소 적용*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+  }
+
+
+/*환영문구 */
+h1 {  
+  border-bottom: 5px solid gray;
+  font-size: 80px;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  }
+
+/*메인 사진*/
+.main_pic {
+  width: 90%;
+  display: block;
+  margin: 0px auto;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+
+/*사이드 바*/
+#grid ul {
+  background-color: skyblue;
+  border-right: 5px solid gray;
+  width: 230px;
+  margin: 0;
+  padding: 20px 20px 20px 40px;
+  color: gray;
+  list-style: none;
+}
+
+li {
+  margin-top: 30px;
+}
+
+/*내용*/
+p {
+  margin: 0 auto;
+  width: 90%;
+  background-color: #D8D8D8;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 230px 3fr;
+}
+
+#grid #content {
+  padding: 40px;
+}
+
+@media(max-width: 700px) {
+  #grid {
+  display: block;
+  }
+
+  #grid ul {
+  border-right: none;
+  }
+
+  h1 {
+  border-bottom: none;
+  }
+}
